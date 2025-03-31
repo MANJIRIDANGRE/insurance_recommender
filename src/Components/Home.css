@@ -1,0 +1,109 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5faff;
+  padding: 20px;
+}
+
+/* Flexbox layout for content */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Left side (Text & Buttons) */
+.home-text {
+  width: 50%;
+  text-align: left;
+}
+
+.home-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Buttons Container */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  padding: 12px 20px;
+  border: 2px solid #1e3a8a;
+  color: #1e3a8a;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+/* Start Now Button */
+.start-button {
+  padding: 12px 24px;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover {
+  background-color: #15327d;
+}
+
+/* Right side (Image) */
+.home-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .home-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
